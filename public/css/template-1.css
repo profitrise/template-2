@@ -1,0 +1,121 @@
+.page {
+  background-color: white;
+  padding: 0 15px;
+}
+.page_content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.header {
+  padding: 24px;
+}
+.footer {
+  padding: 24px 0;
+}
+.footer_copyright {
+  font-size: 14px;
+  color: rgba(108, 117, 125, 1);
+  display: block;
+  margin-top: 12px;
+}
+.logo {
+  font-size: 17px;
+}
+.divider {
+  margin: 0;
+  height: 1px;
+  background-color: rgba(222, 226, 230, 1);
+}
+.nav {
+  display: block;
+}
+.nav_link {
+  color: rgba(52, 58, 64, 1);
+  font-size: 16px;
+  text-decoration: none;
+}
+.nav_link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.nav_vertical > .nav_link {
+  display: block;
+}
+.nav_inline > .nav_link:not(:last-child) {
+  margin-right: 24px;
+}
+.nav_vertical > .nav_link:not(:last-child) {
+  margin-bottom: 12px;
+}
+.header_nav_right {
+  margin-left: auto;
+  width: fit-content;
+}
+.page_block:not(:last-of-type) {
+  margin-bottom: 80px;
+}
+.nav_inline {
+}
+.footer_title {
+  font-size: 20px;
+  color: rgba(33, 37, 41, 1);
+  display: block;
+  margin-bottom: 12px;
+}
+.hero_title {
+  font-size: 56px;
+  color: rgba(33, 37, 41, 1);
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.hero_text {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(33, 37, 41, 1);
+  max-width: 585px;
+  margin: 0 auto;
+}
+.plans_card:not(:last-of-type) {
+  margin-right: 24px;
+}
+.card-header {
+  padding: 12px;
+  font-size: 24px;
+  text-align: center;
+  color: rgba(33, 37, 41, 1);
+}
+.card_body {
+  padding: 24px;
+}
+
+.card_price_amount {
+  font-size: 40px;
+  color: #212529;
+}
+.card_price_duration {
+  font-size: 29px;
+  color: rgba(108, 117, 125, 1);
+}
+.card_block {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.card_block:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+.price_description_item {
+  font-size: 16px;
+  color: #212529;
+  display: block;
+  text-align: center;
+}
+.price_description_item:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+.card_button {
+  display: block;
+  width: 100%;
+  font-size: 19px;
+  padding: 9px;
+}
