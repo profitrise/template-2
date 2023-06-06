@@ -1,0 +1,50 @@
+<div class='page'>
+  <div class='page_content'>
+        <header class='header row g-0'>
+        <div class='col-3'>
+         {{> logo}}
+        </div>
+        <nav class='header_nav col-9'><div class="header_nav_right">{{> nav list=header}}</div>
+           {{!-- {{> nav list=header isVertical=true}} --}}
+        </nav>
+      </header>
+      {{#with main}}
+    <div class="main">
+      <div class="main_content">
+          <h1 class="main_title">{{heading}}</h1>
+  <p class="main_text">{{descriotion}}</p>
+  <button class="button button_main">{{button}}</button>
+      </div>
+    <img src="{{image}}" alt="" class="main_photo">
+  </div>
+    {{/with}}
+    <main class="blog">
+      {{#each featured}}
+      {{> cardMain data=this}}
+      {{/each}}
+    </main>
+        <div class="form">
+      {{#each actions}}
+          <div class="form_action">
+            <h3 class="action_title">{{heading}}</h3>
+        <a href="{{url}}" class="button form_button">{{text}}</a>
+      </div>
+      {{/each}}
+    </div>
+    
+    
+    <footer class="footer row">
+      <div class="col-3">
+        {{> logo}}
+        <span class="footer_copyright">Copyright 2023</span>
+      </div>
+      {{#each footer}}
+      <div class="col-3"><span class="footer_title">{{title}}</span>
+      {{> nav list=links isVertical=true}}
+      </div>
+      {{/each}}
+    </footer>
+   
+
+  </div>
+</div>
